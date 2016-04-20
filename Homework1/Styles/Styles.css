@@ -1,0 +1,175 @@
+body {
+	background-color: white;
+	padding-left:20%;
+	padding-right:20%;
+}
+
+div {
+	font-family: sans-serif;
+	color: #4b4b4b;
+}
+
+#endavaPicture {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	height:200px;
+}
+
+/*Navigation bar styles*/
+/*======================*/
+
+#navBar {
+	border-top:1px solid;
+	border-bottom:1px solid;
+	border-color: #D9D9D9;
+	padding-top:17px;
+	padding-bottom:17px;
+	font-family: sans-serif;
+	color: #9E9E9E;
+	font-size:20px;
+}
+
+.navBarElement{
+	padding-right:10px;
+}
+
+.navBarElement:hover{
+	color: #598F93;
+}
+
+.navBarSocial {
+	float: right;
+	position:relative;
+	width:35px;
+	padding-left:3px;
+	top:-5px;
+}
+
+/*Content styles*/
+/*======================*/
+
+#gallery{
+	width:100%;
+	height:auto;
+	margin-top:50px;
+}
+
+#image{
+	width:100%;
+}
+
+.galleryButtons{
+	border:0px;
+	position:relative;
+	top:-55px;
+	left:10px;
+	height:40px;
+	width:40px;
+	background-color:#598F93;
+}
+
+.articleTitle{
+	border-top:1px solid;
+	border-bottom:1px solid;
+	border-color: #D9D9D9;
+	padding-top:13px;
+	padding-bottom:13px;
+	margin-bottom:40px;
+	margin-top:40px;
+	height:40px;
+	font-weight: 100;
+	text-transform: uppercase;
+	
+}
+
+.articleTitleText {
+	font-family: sans-serif;
+	color: #9E9E9E;
+	font-size:35px;
+	text-align:center;
+	background: repeating-linear-gradient(
+	  135deg,
+	  transparent,
+    transparent 5px,
+    #ccc 1px,
+    #ccc 6px
+	);
+}
+
+
+.latestWorkImages{
+	width:29%;
+	padding-right:6%;
+	margin:0px;
+	border:0px;
+	display: inline-block;
+}
+.latestWorkImages:last-child {
+	padding-right:0%;
+	
+}
+
+#webDesigners{
+	display:inline-block;
+	margin-right:3%;
+	width:48%;
+	height:auto;
+}
+
+#softwareEngineers{
+	display:inline-block;
+	width:48%;
+	height:auto;
+}
+
+#designSoftArticle{
+	height:auto;
+	margin-bottom:40px;
+}
+
+.designImages {
+	margin-top:20px;
+	margin-bottom:20px;
+	width:20%;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p.content{
+	font-family: sans-serif;
+	color: #9E9E9E;
+	font-size:20px;
+	text-indent: 30px;
+	text-align: center;
+}
+
+
+/*Footer styles*/
+/*======================*/
+
+#footer{
+	border-top:1px solid;
+	border-bottom:1px solid;
+	border-color: #D9D9D9;
+	background-color:#BABABA;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-bottom:30px;
+	font-family: sans-serif;
+	color: #ffffff;
+	font-size:20px;
+}
+
+#footerText{
+	padding-left:15px;
+	padding-right:15px;
+}
+
+.footerElement{
+	float: right;
+	padding-left:10px;
+	padding-right:10px;
+	
+}
