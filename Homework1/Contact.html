@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact us</title>
+	<link rel="stylesheet" href="Styles/Styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="JS/jquery-2.2.3.min.js"> </script>
+	<script src="JS/endava.js"></script>
+</head>
+<header>
+	<img id="endavaPicture" src="Media/endava.jpg"/>
+</header>
+<body>
+	<nav id="navBar">
+		<a class="navBarElement">Home</a>
+		<a class="navBarElement">Work</a>
+		<a class="navBarElement">Contact</a>
+		<img class="navBarSocial" onclick="onClickFacebook()" src="Media/facebook.png"/>
+		<img class="navBarSocial" onclick="onClickTwitter()" src="Media/twitter.png"/>
+	</nav>
+
+	<article>
+		<section class="articleTitle">
+			<div id="left"> </div>
+			<div class="articleTitleText">
+				Contact Us
+			</div>
+			<div id="right"> </div>
+		</section>
+	</article>
+	
+	<article>
+		<section>
+			<input id="name" type="input" placeholder="Name"></input>
+			<input id="email" type="input" placeholder="Email"></input>
+			<input id="website" type="input" placeholder="Website"></input>
+		</section>
+		<section>
+			<textarea id="message" placeholder="Message"></textarea>
+		</section>
+		<section id="submitSection">
+			<input id="button" type="button" value="Submit" onclick="SubmitMessage();"></input>
+		</section>
+	</article>
+	
+	
+	<footer id="footer">
+		<a id="footerText">&#169;2016 Endava Graduates</a>
+		<!--<a class="footerElement">Contact</a>
+		<a class="footerElement">Work</a>
+		<a class="footerElement">Home</a>-->
+		<nav id="bottomNavBar">
+			<a class="navBarElement">Home</a>
+			<a class="navBarElement">Work</a>
+			<a class="navBarElement">Contact</a>
+		</nav>
+	</footer>
+</body>
+</html>
+
