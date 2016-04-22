@@ -33,16 +33,16 @@ function ValidateFields(){
 	console.log(website);
 	console.log(message);
 	
-	if (validateEmail(email) == false) {
-		return "Invalid Email Adress";
-	} 
-	if (name == "" || name.length < 5) {
+	if (name == "" || name.length < 3) {
 		return "Invalid Name";
 	}
+	if (validateEmail(email) == false) {
+		return "Invalid Email Adress";
+	} 	
 	if (isValidWebsite(website) == false) {
 		return "Invalid Website";
 	}
-	if (message == "" || message.length < 10) {
+	if (message == "" || message.length < 5) {
 		return "Invalid Message"
 	}	
 	

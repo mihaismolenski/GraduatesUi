@@ -1,3 +1,15 @@
+/*Global styles*/
+#navBar a{
+	text-decoration:none;
+	color:#9E9E9E;
+}
+#bottomNavBar a{
+	text-decoration:none;
+	color:white;
+}
+
+/*End Global styles*/
+
 @media screen and (min-width: 1200px) {
 	body {
 		background-color: white;
