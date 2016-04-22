@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Endava</title>
+	<title>Home</title>
 	<link rel="stylesheet" href="Styles/Styles.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="JS/jquery-2.2.3.min.js"></script>
+	<script src="JS/endava.js"></script>
 </head>
 <header>
 	<img id="endavaPicture" src="Media/endava.jpg"/>
@@ -12,32 +15,38 @@
 		<a class="navBarElement">Home</a>
 		<a class="navBarElement">Work</a>
 		<a class="navBarElement">Contact</a>
-		<img class="navBarSocial" src="Media/facebook.png"/>
-		<img class="navBarSocial" src="Media/twitter.png"/>
+		<img class="navBarSocial" onclick="onClickFacebook()" src="Media/facebook.png"/>
+		<img class="navBarSocial" onclick="onClickTwitter()" src="Media/twitter.png"/>
 	</nav>
 
 	<article id="gallery">
 		<img id="image" src="Media/image1.jpg"/>
 		<input id="button1" type="button" onclick="changePicture(1);" class="galleryButtons"></input>
-		<input id="button1" type="button" onclick="changePicture(2);" class="galleryButtons"></input>
+		<input id="button2" type="button" onclick="changePicture(2);" class="galleryButtons"></input>
 	</article>
 
 	<article>
 		<section class="articleTitle">
+			<div id="left"> </div>
 			<div class="articleTitleText">
 				Latest Work
 			</div>
+			<div id="right"> </div>
 		</section>
-		<img class="latestWorkImages" src="Media/image3.jpg"></img>
-		<img class="latestWorkImages" src="Media/image4.jpg"/>
-		<img class="latestWorkImages" src="Media/image5.jpg"/>
+		<section id="imagesColumns">
+			<img class="latestWorkImages" src="Media/image3.jpg"></img>
+			<img class="latestWorkImages" src="Media/image4.jpg"/>
+			<img class="latestWorkImages" src="Media/image5.jpg"/>
+		</section>
 	</article>
 	
 	<article>
 		<section class="articleTitle">
+			<div id="left"> </div>
 			<div class="articleTitleText">
 				Who are we?
 			</div>
+			<div id="right"> </div>
 		</section>
 		<section>
 			<p class="content">
@@ -49,10 +58,11 @@
 	<article id="designSoftArticle">
 		<section id="webDesigners">
 			<section class="articleTitle">
+				<div id="left"> </div>
 				<div class="articleTitleText">
 					Web Designers
 				</div>
-				
+				<div id="right"> </div>
 			</section>
 			<img class="designImages" src="Media/design.png"/>
 			<section >
@@ -65,9 +75,11 @@ Eu eum nulla ignota nominati, ex vis dicat volumus. Deleniti consetetur eos in, 
 		</section>
 		<section id="softwareEngineers">
 			<section class="articleTitle">
+				<div id="left"> </div>
 				<div class="articleTitleText">
 					Software Engineers
 				</div>
+				<div id="right"> </div>
 			</section>
 			<img class="designImages" src="Media/engineers.png"/>
 			<section>
@@ -83,21 +95,14 @@ Eu eum nulla ignota nominati, ex vis dicat volumus. Deleniti consetetur eos in, 
 	
 	<footer id="footer">
 		<a id="footerText">&#169;2016 Endava Graduates</a>
-		<a class="footerElement">Contact</a>
+		<!--<a class="footerElement">Contact</a>
 		<a class="footerElement">Work</a>
-		<a class="footerElement">Home</a>
+		<a class="footerElement">Home</a>-->
+		<nav id="bottomNavBar">
+			<a class="navBarElement">Home</a>
+			<a class="navBarElement">Work</a>
+			<a class="navBarElement">Contact</a>
+		</nav>
 	</footer>
 </body>
 </html>
-
-<script>
-	function changePicture(n) {
-		var a = document.getElementById("image");
-		if (n==1) {
-			a.src = "Media/image1.jpg"
-		} else{
-			a.src = "Media/image2.jpg"
-		}
-	}
-
-</script>
